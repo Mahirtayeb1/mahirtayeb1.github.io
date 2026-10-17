@@ -130,6 +130,21 @@ h3 { font-size: 1.5rem; font-weight: 500; line-height: 1.2; letter-spacing: -.02
   display: flex; flex-wrap: wrap; gap: 8px 32px; margin-top: 52px;
   color: #999aa1; font-size: .7rem; letter-spacing: 1.6px;
 }
+.role-card {
+  display: inline-flex; align-items: center; gap: 14px; margin-top: 30px; padding: 12px 20px 12px 12px;
+  border: 1px solid #e0c27855; border-radius: 12px;
+  background: linear-gradient(135deg, #e0c2781a, #ffffff05); transition: border-color .2s, background .2s;
+}
+.role-card:hover { border-color: var(--gold); background: linear-gradient(135deg, #e0c27826, #ffffff08); }
+.role-card img { flex: none; width: 44px; height: 44px; border-radius: 9px; object-fit: contain; background: #fff; }
+.role-text { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+.role-status { display: flex; align-items: center; gap: 7px; color: var(--gold); font-size: .625rem; letter-spacing: 1.5px; }
+.role-status i { width: 7px; height: 7px; border-radius: 50%; background: #5fd38d; box-shadow: 0 0 0 3px #5fd38d2e; animation: role-pulse 2.4s ease-in-out infinite; }
+@keyframes role-pulse { 50% { box-shadow: 0 0 0 6px #5fd38d00; } }
+.role-text strong { color: var(--fg); font-size: 1.05rem; font-weight: 600; letter-spacing: -.3px; }
+.role-org { color: #a3a7b0; font-size: .78rem; }
+@media (prefers-reduced-motion: reduce) { .role-status i { animation: none; } }
+
 .hero-network { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; margin-top: 22px; }
 .hero-resume, .icon-link {
   display: inline-flex; align-items: center; justify-content: center; gap: 9px;

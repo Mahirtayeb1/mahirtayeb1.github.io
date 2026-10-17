@@ -24,6 +24,8 @@
 .ap-photo img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: top; }
 .ap-sidebar h2 { margin: 22px 0 12px; font-size: 1.75rem; font-weight: 600; letter-spacing: -1px; line-height: 1.15; }
 .ap-sidebar h2 span { color: #ddc993; }
+.ap-sidebar .role-card { display: flex; margin: 0 0 18px; padding: 10px 14px 10px 10px; }
+.ap-sidebar .role-card img { width: 38px; height: 38px; }
 .ap-sidebar > p { color: #aaadb5; font-size: .875rem; line-height: 1.75; }
 .ap-location { display: flex; align-items: center; gap: 8px; margin-top: 22px; color: #90959f; font-size: .75rem; }
 .ap-sidebar nav {
@@ -221,6 +223,9 @@
   .ap-sidebar h2 { margin: 0 0 6px; font-size: 1.5rem; }
   .ap-sidebar > p { font-size: .8125rem; line-height: 1.6; }
   .ap-sidebar > p br { display: none; }
+  .ap-sidebar .role-card { margin: 4px 0 10px; padding: 8px 12px 8px 8px; gap: 10px; }
+  .ap-sidebar .role-card img { width: 32px; height: 32px; }
+  .ap-sidebar .role-text strong { font-size: .9rem; }
   .ap-location { grid-column: 2; margin-top: 10px; font-size: .6875rem; }
   .ap-sidebar nav {
     grid-column: 1 / -1; flex-direction: row; gap: 22px; overflow-x: auto;
