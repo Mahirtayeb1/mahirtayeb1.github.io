@@ -134,6 +134,9 @@
 .ap-education { display: grid; grid-template-columns: repeat(3, 1fr); gap: 35px; }
 .ap-education .ap-subrole { margin-bottom: 10px; color: #d3d4d7; font-size: .875rem; }
 #dichari { scroll-margin-top: 32px; }
+.ap-courses-label { margin-top: 16px; color: #b9a674 !important; font-size: .6875rem !important; letter-spacing: 1.3px; text-transform: uppercase; }
+.ap-courses { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+.ap-courses li { padding: 5px 11px; border: 1px solid #ffffff1f; border-radius: 999px; color: #d3d4d7; font-size: .78rem; }
 .ap-progression { display: grid; gap: 8px; margin-bottom: 14px; }
 .ap-progression li { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 4px 12px; color: #9298a2; font-size: .8125rem; }
 .ap-progression strong { color: #d3d4d7; font-weight: 500; }
