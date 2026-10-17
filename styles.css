@@ -213,6 +213,28 @@ h3 { font-size: 1.5rem; font-weight: 500; line-height: 1.2; letter-spacing: -.02
 .metric-suffix { font-size: .55em; letter-spacing: -1px; }
 .metric-caption { margin-top: 14px; color: var(--fg-muted); font-size: .9rem; line-height: 1.5; }
 
+/* More projects */
+.more-work { margin-top: 56px; }
+.more-work-head { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 16px; margin-bottom: 22px; }
+.more-work-head .eyebrow { margin-bottom: 0; }
+.more-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; }
+.mini-project {
+  display: flex; flex-direction: column; padding: 26px 24px;
+  background: var(--bg-raised); border: 1px solid var(--line); border-radius: var(--radius);
+  transition: border-color .3s, transform .3s;
+}
+.mini-project:hover { border-color: #e0c27855; transform: translateY(-2px); }
+.mini-kicker { color: var(--gold-soft); font-size: .68rem; font-weight: 500; letter-spacing: 1.5px; }
+.mini-project h3 { margin-top: 14px; font-size: 1.15rem; }
+.mini-metric {
+  margin-top: 26px; font-size: 2.6rem; line-height: 1; letter-spacing: -2px;
+  color: transparent; background: linear-gradient(#fff, #a5a6a9);
+  -webkit-background-clip: text; background-clip: text;
+}
+.mini-caption { margin-top: 10px; color: var(--fg-muted); font-size: .85rem; line-height: 1.5; }
+.mini-link { display: inline-flex; align-items: center; gap: 8px; margin-top: auto; padding-top: 22px; color: #d2d3d8; font-size: .82rem; font-weight: 500; }
+.mini-project:hover .mini-link { color: var(--gold-soft); }
+
 /* Expertise */
 .expertise { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
 .expertise-card {
@@ -363,6 +385,7 @@ h3 { font-size: 1.5rem; font-weight: 500; line-height: 1.2; letter-spacing: -.02
   .project { grid-template-columns: 1fr; gap: 30px; }
   .project-stat { padding: 26px 0 0; border-left: 0; border-top: 1px solid var(--line); }
   .expertise { grid-template-columns: 1fr; }
+  .more-grid { grid-template-columns: 1fr 1fr; }
   .expertise-card h3 { margin-top: 26px; }
   .about, .contact { grid-template-columns: 1fr; gap: 56px; }
   .publication { grid-template-columns: 1fr; gap: 40px; }
@@ -388,5 +411,6 @@ h3 { font-size: 1.5rem; font-weight: 500; line-height: 1.2; letter-spacing: -.02
   .publication { margin: 64px 18px 0; padding: 30px 25px; }
   .form-grid { grid-template-columns: 1fr; }
   .gallery-grid { grid-template-columns: 1fr; }
+  .more-grid { grid-template-columns: 1fr; }
   .footer { margin-top: 64px; }
 }
